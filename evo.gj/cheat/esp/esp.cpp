@@ -5,7 +5,7 @@ void Esp::ActorLoop() {
 	
 	//get address
 	{
-		LocalPtrs::Gworld = read<uint64_t>(BaseId + 0xE075F20); //https://fn.dumps.host/offsets?offset=GWorld
+		LocalPtrs::Gworld = read<uint64_t>(BaseId + 0xEE5A148); //https://fn.dumps.host/offsets?offset=GWorld
 		if (Debug::PrintPointers) Util::PrintPtr("Uworld: ", LocalPtrs::Gworld);
 		if (!LocalPtrs::Gworld) return;
 
