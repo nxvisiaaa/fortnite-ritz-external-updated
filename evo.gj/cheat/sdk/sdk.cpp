@@ -3,8 +3,8 @@
 Vector3 SDK::GetBoneWithRotation(uintptr_t mesh, int id)
 {
 	uintptr_t bonearray = 0;
-	bonearray = read<uintptr_t>(mesh + 0x5c0);
-	if (!bonearray) bonearray = read<uintptr_t>(mesh + 0x5c0 + 0x10);
+	bonearray = read<uintptr_t>(mesh + 0x5E8);
+	if (!bonearray) bonearray = read<uintptr_t>(mesh + 0x5F8 + 0x10);
 	
 	FTransform ComponentToWorld = read<FTransform>(mesh + 0x240);
 
